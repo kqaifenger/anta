@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<link rel="stylesheet" type="text/css" href="css/log.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+	</head>
+	<body>
+		<div id="con">
+			<div class="top">
+				<img src="images/logo.png"/>
+			</div>
+			<div class="center">
+				<input type="text" id="uname" placeholder="  邮箱/手机号/用户名" "/><br />
+				<input type="password" id="upwd" placeholder="  密码"/><br />
+				<button id="btn">立即登录</button>
+			</div>
+			<div class="bottom">
+				<p>其他方式登录</p>
+					<i class="iconfont icon-erweima"></i>
+					<i class="iconfont icon-erweima"></i>
+					<i class="iconfont icon-erweima"></i>
+				<div class="wz">
+					<li><a href="reg.html">账号注册</a></li>
+					<li><a href="reg.html">忘记密码</a></li>
+				</div>
+			</div>
+			
+		</div>
+		<div class="fixed">
+			<a href="javascript:;">
+				<div class="zaixian">
+					<i class="iconfont icon-yuyin"></i>
+					<p>在线客服</p>
+				</div>
+			</a>
+			<a href="javascript:;">
+			<div class="dianhua">
+				<i class="iconfont icon-shengyin"></i>
+				<p>客服电话</p>
+				<span class="er">
+					<em>400-2124-3213</em>
+				</span>
+			</div>
+			</a>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/cookie.js"></script>
+<script type="text/javascript">
+	$(".dianhua").hover(function(){
+		$(this).find(".er").css( {"display":"block"} )
+	},function(){
+		$(this).find(".er").css( {"display":"none"} )
+	})
+	//cookie
+	var userN = getCookie("uname");
+	var usrP = getCookie("upwd");
+	var userN2 = getCookie("uname2");
+	var usrP2 = getCookie("upwd2");
+	var btn = document.getElementById("btn");
+	var uname = document.getElementById("uname");
+	var upwd = document.getElementById("upwd");
+	btn.onclick = function(){
+		var name = uname.value;
+		var pwd = upwd.value;
+		var name2 = uname.value;
+		var pwd2 = upwd.value;
+		if((name == userN && pwd == usrP)||(name2 == userN2 && pwd2 == usrP2)){
+			alert("登录成功");
+			window.location.href = "index.html";
+		}else{
+			alert("登录失败");
+		}
+	}
+
+</script>

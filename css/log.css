@@ -1,0 +1,119 @@
+@charset "utf-8";
+html,body{
+	background: #f5f5f5;
+	position: relative;
+}
+#con{
+	width: 65%;
+	height: 620px;
+	background: #fff;
+	margin: 0 auto;
+}
+.top{
+	height: 120px;
+}
+.top img{
+	padding: 50px 0 0 320px;
+}
+.center{
+	height: 235px;
+}
+.center input{
+	width: 356px;
+	height: 42px;
+	margin: 20px  0 0 250px;
+}
+.center button{
+	width: 356px;
+	height: 50px;
+	background: red;
+	margin: 20px  0 0 250px;
+	color: #fff;
+
+}
+.bottom{
+	height: 265px;
+}
+.bottom {
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+}
+.bottom i{
+	font-size: 30px;
+	color: #C0C0C0;
+	line-height: 60px;
+	padding-left: 30px;
+}
+.bottom i:hover{
+	color: deepskyblue;
+}
+.bottom i:last-child:hover{
+	color: red;
+}
+.bottom .wz{
+	padding-left: 340px;
+}
+.bottom li{
+	float: left;
+	padding-left: 20px;
+}
+.bottom .wz li a{
+	color: #999;
+}
+.bottom .wz li a:hover{
+	color: orangered;
+}
+.fixed .zaixian{
+	width: 70px;
+	height: 75px;
+	background: orange;
+	position: absolute;
+	right: 6%;
+	bottom: 12%;
+}
+.fixed .zaixian:hover{
+	background: red;
+}
+.fixed .zaixian i{
+	font-size: 40px;
+	color: #fff;
+	line-height: 50px;
+	padding-left: 14px;
+}
+.fixed .zaixian p{
+	color: #fff;
+	font-size: 14px;
+	padding-left: 5px;
+}
+.fixed .dianhua{
+	width: 70px;
+	height: 75px;
+	background: red;
+	position: absolute;
+	right: 6%;
+	bottom: 0%;
+}
+.fixed .dianhua i{
+	font-size: 40px;
+	color: #fff;
+	line-height: 50px;
+	padding-left: 14px;
+}
+.fixed .dianhua p{
+	color: #fff;
+	font-size: 14px;
+	padding-left: 5px;
+}
+.fixed .dianhua .er{
+	width: 170px;
+	height: 75px;
+	background: red;
+	position: absolute;
+	right: 100%;
+	bottom: 0%;
+	color: #fff;
+	text-align: center;
+	line-height: 75px;
+	display: none;
+}
